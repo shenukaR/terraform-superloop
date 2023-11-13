@@ -12,9 +12,9 @@
 
 # nginx server deployment using Ansible
 
-1. After the terraform infastructe provsioned take the instance_public_ip from Outputs and replace the ip in inventory file under ansible folder.
-2. Change to ansible directory and run 'ansible-playbook -i inventory nginx.yml -b'
-3. Make sure to push the changes after resource creation
+1. After provisioning the infrastructure with Terraform, retrieve the instance_public_ip from the outputs and update the IP in the inventory file under the ansible folder.
+2. Change to ansible directory and run 'ansible-playbook -i inventory nginx.yml -b'.
+3. Make sure to push the changes after resource creation.
 
 
 
