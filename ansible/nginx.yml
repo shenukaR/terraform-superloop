@@ -1,0 +1,12 @@
+---
+- hosts: superloop
+  tasks:
+    - name: Install Python
+      raw: sudo apt-get update && sudo apt-get install -y python
+      become: true
+    - name: install nginx
+      apt: name=nginx state=latest
+    - name: start nginx
+      service:
+          name: nginx
+          state: started
